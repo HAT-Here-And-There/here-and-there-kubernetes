@@ -1,5 +1,5 @@
 env: dev
-name: user-service-new
+name: user-service
 
 replicaset:
   replicas: 1
