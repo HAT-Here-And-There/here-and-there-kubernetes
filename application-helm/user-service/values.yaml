@@ -1,0 +1,11 @@
+env: dev
+name: user-service-new
+
+replicaset:
+  replicas: 1
+
+image:
+  owner: bemodesty306
+  repository: spring-user
+  tag: latest
+  port: 9090

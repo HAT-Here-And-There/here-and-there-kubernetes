@@ -1,0 +1,1 @@
+helm install argocd -n argo argo/argo-cd -f ./values.yaml --create-namespace
