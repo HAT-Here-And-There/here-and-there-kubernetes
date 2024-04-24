@@ -5,7 +5,7 @@ replicaset:
   replicas: 1
 
 image:
-  owner: bemodesty306
-  repository: spring-user
+  owner: public.ecr.aws/i5i6z8x2
+  repository: hat-user-service
   tag: latest
-  port: 9090
+  port: 8080
