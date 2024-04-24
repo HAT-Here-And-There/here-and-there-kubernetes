@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: nodejs-server
+  name: user-service
   namespace: argo
 spec:
   destination:
