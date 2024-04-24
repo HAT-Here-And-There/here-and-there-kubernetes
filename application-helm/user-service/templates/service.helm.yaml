@@ -13,4 +13,4 @@ spec:
   selector:
     app: user
     env: {{ .Values.env }}
-  type: ClusterIp
+  type: ClusterIP
