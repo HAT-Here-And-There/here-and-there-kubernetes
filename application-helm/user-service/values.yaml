@@ -1,11 +1,9 @@
 env: dev
 name: user-service
-
 replicaset:
   replicas: 1
-
 image:
   owner: 975050320314.dkr.ecr.ap-northeast-2.amazonaws.com
   repository: dev-hat629-ecr-user
-  tag: latest
+  tag: 6db8ee88d53c4c38a3ae20dbb3d2cf036d9cd5f7
   port: 8080
