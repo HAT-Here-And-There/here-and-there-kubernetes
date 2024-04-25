@@ -5,7 +5,7 @@ replicaset:
   replicas: 1
 
 image:
-  owner: public.ecr.aws/i5i6z8x2
-  repository: hat-user-service
+  owner: 975050320314.dkr.ecr.ap-northeast-2.amazonaws.com
+  repository: dev-hat629-ecr-user
   tag: latest
   port: 8080
