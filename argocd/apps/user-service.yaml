@@ -3,8 +3,6 @@ kind: Application
 metadata:
   name: user-service
   namespace: argo
-  annotations:
-    notifications.argoproj.io/subscribe.on-sync-succeeded.webhook.slack_webhook: "개발-관련-알림"
 spec:
   destination:
     namespace: default
