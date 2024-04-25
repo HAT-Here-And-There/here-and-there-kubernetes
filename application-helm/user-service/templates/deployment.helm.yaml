@@ -18,8 +18,11 @@ spec:
         env: {{ .Values.env }}
     spec:
       containers:
-        - name: user-service
+        - name: backend
           image: {{ .Values.image.owner }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}
           imagePullPolicy: Always
           ports:
             - containerPort: {{ .Values.image.port }}
+          envFrom:
+            - secretRef:
+                name: {{ .Values.name }}-secret
