@@ -1,0 +1,1 @@
+cat secret.helm.yaml | kubeseal --scope cluster-wide -oyaml > sealed-secret.helm.yaml --controller-name=sealed-secrets
