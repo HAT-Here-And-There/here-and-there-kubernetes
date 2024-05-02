@@ -1,0 +1,9 @@
+env: dev
+name: chat-service
+replicaset:
+  replicas: 2
+image:
+  owner: public.ecr.aws/i5i6z8x2
+  repository: dev-hat629-ecr-chat
+  tag: fd50233a8218f4975555e6889599eb477780c323
+  port: 8080

@@ -16,3 +16,21 @@ spec:
                 name: user-service
                 port:
                   number: 80
+    - http:
+        paths:
+          - pathType: Prefix
+            path: /tour(/|$)(.*)
+            backend:
+              service:
+                name: tour-service
+                port:
+                  number: 80
+    - http:
+        paths:
+          - pathType: Prefix
+            path: /chat(/|$)(.*)
+            backend:
+              service:
+                name: chat-service
+                port:
+                  number: 80

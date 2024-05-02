@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: tour-service
+  namespace: argo
+spec:
+  destination:
+    namespace: default
+    server: "https://kubernetes.default.svc"
+  project: default
+  source:
+    repoURL: https://github.com/HAT-Here-And-There/here-and-there-kubernetes.git
+    targetRevision: main
+    path: application-helm/tour-service
+    helm:
+      valueFiles:
+        - values.yaml
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
