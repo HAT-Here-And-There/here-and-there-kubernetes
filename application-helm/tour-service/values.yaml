@@ -5,5 +5,5 @@ replicaset:
 image:
   owner: public.ecr.aws/i5i6z8x2
   repository: dev-hat629-ecr-tour
-  tag: 46e7b1cd828193bdda874c284dc9e5b3dbe10076
+  tag: 0b2891dac8ee2f75b0042935ec6d061f9cfff050
   port: 8080
