@@ -14,7 +14,7 @@ spec:
             path: /user(/|$)(.*)
             backend:
               service:
-                name: user-service
+                name: user-service-aws
                 port:
                   number: 80
     - http:
@@ -23,7 +23,7 @@ spec:
             path: /tour(/|$)(.*)
             backend:
               service:
-                name: tour-service
+                name: tour-service-aws
                 port:
                   number: 80
     - http:
@@ -32,6 +32,6 @@ spec:
             path: /chat(/|$)(.*)
             backend:
               service:
-                name: chat-service
+                name: chat-service-aws
                 port:
                   number: 80
