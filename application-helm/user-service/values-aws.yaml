@@ -1,0 +1,9 @@
+env: dev
+name: user-service-aws
+replicaset:
+  replicas: 2
+image:
+  owner: public.ecr.aws/i5i6z8x2
+  repository: dev-hat629-ecr-user
+  tag: ade9db6264c41fe26de5497e4728d40a1155d519
+  port: 8080
