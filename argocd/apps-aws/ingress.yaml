@@ -3,6 +3,7 @@ kind: Ingress
 metadata:
   name: ingress
   annotations:
+    service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
     nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
   ingressClassName: nginx
