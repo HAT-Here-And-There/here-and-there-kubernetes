@@ -1,2 +1,3 @@
 secret.yaml
 secret.helm.yaml
+secret.helm-aws.yaml
