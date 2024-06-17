@@ -13,7 +13,7 @@ spec:
   source:
     repoURL: https://github.com/HAT-Here-And-There/here-and-there-kubernetes.git
     targetRevision: HEAD
-    path: argocd/apps
+    path: argocd/apps-aws
 
   destination:
     server: https://kubernetes.default.svc
